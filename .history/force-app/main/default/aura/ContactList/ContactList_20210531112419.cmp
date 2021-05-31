@@ -1,0 +1,11 @@
+<aura:component>
+    <aura:attribute name="contactList" type="contact[]" access="public" />
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <aura:iteration items="{!v.contactList}" var="conVar">
+        <lightning:card  variant="Narrow"  title="{!v.conVar.name}" iconname="standard:contact">
+            <p class="slds-p-horizontal_small">Card Body Narrow (custom component)</p>
+            <p slot="footer">Card Footer</p>
+        </lightning:card>
+    </aura:iteration>
+
+</aura:component>	

@@ -1,0 +1,15 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId"
+                controller="ContactList"
+                access="public">
+    <aura:attribute name="contactList" type="contact[]" access="public" />
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <aura:iteration items="{!v.contactList}" var="conVar">
+        <lightning:card  variant="Narrow"  title="{!conVar.Name}" iconName="standard:contact">
+            <p class="slds-p-horizontal_small">
+                Contact ID : {!conVar.Id}
+            </p>
+            
+        </lightning:card>
+    </aura:iteration>
+
+</aura:component>	

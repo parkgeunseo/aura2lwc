@@ -1,0 +1,16 @@
+<aura:component>
+    <!-- <aura:handler name ="init" value ="{!this}" action ="{!c.myAction}" /> 클라이언트사이드컨트롤러 실행 -->
+    <aura:attribute name="whom" type="String" />
+    <!--속성 종류 -->
+    <!-- access : 속성을 자체 네임 스페이스 외부에서 사용할 수 있는지 여부를 나타냅니다. 가능한 값은 public (기본값), global 및 private입니다. -->
+    <!-- name : 필수입니다. 속성의 이름입니다. 예를 들어 aura : newCmp라는 구성 요소에 <aura : attribute name = "isTrue"type = "Boolean"/>를 설정하면 구성 요소를 인스턴스화 할 때이 속성을 설정할 수 있습니다. 예 : <aura : newCmp isTrue = "false"/>. -->
+    <!-- type : 필수입니다. 속성의 유형입니다.  -->
+    <!-- default : 필요에 따라 덮어 쓸 수있는 속성의 기본값입니다. 기본값을 설정할 때 $ Label, $ Locale 및 $ Browser 전역 값 공급자를 사용하는식이 지원됩니다. 또는 동적 기본값을 설정하려면 init 이벤트를 사용하십시오. -->
+    <!-- required : 속성이 필요한지 여부를 판별합니다. 기본값은 false입니다. -->
+    <aura:attribute name="favoriteColors" type="String[]" default="['red','green','blue']" />
+    <aura:attribute name="accounts" type="Account[]"/>
+    
+    <!-- https://developer.salesforce.com/docs/component-library/overview/components 에서 만들고자 하는 ui 탐색 lwc포함 -->
+
+
+</aura:component>	

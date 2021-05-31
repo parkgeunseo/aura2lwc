@@ -1,0 +1,11 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" 
+                access="public">
+    <aura:attribute name="accList" type="Account[]" />>
+
+    <aura:iteration items="{!v.accList}" var="acc">
+        <p>
+            AccountName : {!acc.name}
+        </p>
+    </aura:iteration>
+    <lightning:button label="submit" onclick={!c.myAction}></lightning:button>
+</aura:component>	
